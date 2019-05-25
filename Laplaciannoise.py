@@ -1,6 +1,7 @@
 # Implementing Laplace mechanism on Adult dataset by adding Laplacian random noise
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 
 # Load Adult dataset 
 dataset = pd.read_csv("adult.data.txt",
@@ -25,3 +26,4 @@ noisydata = datacount + Laplacian_noise
 
 # Generate noisy histogram
 noisydata.plot(kind="bar",color = 'g')
+plt.show()
